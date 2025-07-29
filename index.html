@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <main class="main-container">
+            <header class="input-container">
+                <input type="text" class="search-input" placeholder="Search City" />
+                <button class="search-btn">
+                    <img src="./assets/img/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="search" />
+                </button>
+            </header>
+            <section class="weather" style="display: none;">
+                <div class="main-information">
+                    <div class="location">
+                        <img
+                            src="./assets/img/location_on_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="location"
+                            class="icon"
+                        />
+                        <h1 class="city-searched">Singapore</h1>
+                    </div>
+                    <p class="date">Thu, 08 Aug</p>
+                </div>
+                <div class="weather-information">
+                    <img src="./assets/img/thunderstorm.svg" alt="thunderstorm" class="weather-icon" />
+                    <span>
+                        <h2 class="temp">28 °C</h2>
+                        <h2 class="main-weather">Rain</h2>
+                    </span>
+                </div>
+                <div class="conditions-information">
+                    <div class="humidity">
+                        <img
+                            src="./assets/img/water_drop_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="humidity"
+                            class="icon"
+                        />
+                        <span>
+                            Humidity
+                            <p class="humidity-value">74%</p>
+                        </span>
+                    </div>
+                    <div class="wind-speed">
+                        <img
+                            src="./assets/img/air_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="wind"
+                            class="icon"
+                        />
+                        <span>
+                            Wind Speed
+                            <p class="wind-speed-value">4.12 M/s</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="next-days-weather"></div>
+                <div class="forecast-elements-container">
+                    
+                </div>
+                
+            </section>
+
+            <section class="search-city">
+                <img src="./assets/img/search-city.png" alt="Search City">
+                <h1>Search City</h1>
+                <p>Find out the weather conditions of the city</p>
+            </section>
+
+            <section class="not-found-city" style="display: none;">
+                <img src="./assets/img/not-found.png" alt="City Not Found">
+                <p>Oops, We can't seem to find the city you're looking for, try again!</p>
+            </section>
+        </main>
+    </body>
+    <script src="./scripts.js"></script>
+</html>
